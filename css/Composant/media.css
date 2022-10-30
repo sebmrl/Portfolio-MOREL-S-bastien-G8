@@ -1,0 +1,102 @@
+/* Ecran de pas téléphone */
+
+@media screen and (min-device-width: 576px)
+{
+    .col1
+    {
+    color: red;
+    background-color: red;
+    height: 5px;
+    width: 300px;
+    transform-origin: bottom;
+    animation: elargir 4s infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    }
+
+    .col2
+    {
+    color: red;
+    background-color: red;
+    width: 300px;
+    transform-origin: bottom;
+    animation: elargir 4s infinite reverse;
+    }
+
+    #liste > .elemList
+    {
+        background-color: red;
+        border: solid;
+        padding: 7px;
+    }
+
+    #liste > .elemList:hover
+    {
+    text-decoration: underline;
+    animation: shake 2s linear infinite;
+    }
+
+    #wireframeAccueil{
+        display: flex;
+        justify-content: center;
+        height: 700px;
+        padding-bottom: 1em;
+    }
+
+    .d-block
+    {
+    height: 700px;
+    }
+}
+
+
+
+
+
+
+/* Ecran de téléphone */
+
+@media screen and (max-device-width: 575px)
+{
+    #liste
+    {
+        display: flex;
+        width: 30%;
+        gap: 10px;
+        justify-content: flex-end;
+        margin-right: 1em;
+    }
+
+    #wireframeAccueil{
+        display: flex;
+        justify-content: center;
+        height: 400px;
+        padding-bottom: 1em;
+    }
+
+    #col1
+    {
+        display: none;
+    }
+    #col2
+    {
+        display: none;
+    }
+
+    #liste > .elemList
+    {
+        background-color: rgba(255, 122, 122, 0.685);
+        border: solid;
+        padding: 7px;
+    }
+
+    #liste > .elemList:hover
+    {
+        background-color: rgb(139, 26, 26);
+        box-shadow: 10px 5px 5px grey;
+    }
+
+    .d-block
+    {
+    height: 500px;
+    }
+}
